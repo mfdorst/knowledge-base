@@ -39,3 +39,9 @@ cargo install paru bat fd-find ripgrep
 paru -S brave-bin
 ```
 
+## For rust development
+
+```
+cargo install cargo-edit
+```
+
