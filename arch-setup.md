@@ -17,7 +17,7 @@ git clone https://github.com/mfdorst/scripts
 
 ```
 scripts/install-omz
-scripts/install-starship-prompt
+scripts/install-starship
 scripts/install-rustup
 ```
 
