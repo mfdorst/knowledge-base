@@ -208,4 +208,16 @@ umount -l /mnt
 reboot
 ```
 
+## Set up wifi (again)
+
+Your wifi settings will not persist from the live USB, so we will need to connect again.
+
+If you need to see a list of SSID's, do
+```
+nmcli device wifi list
+```
+To connect to one, do
+```
+nmcli device wifi connect <SSID> password <password>
+```
 

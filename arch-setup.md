@@ -24,13 +24,13 @@ scripts/install-rustup
 ## Install quality-of-life tools for the terminal
 
 ```
-sudo pacman -S alacritty neovim tty-fira-code hub exa
+sudo pacman -S alacritty neovim tty-fira-code hub exa bat fd ripgrep
 ```
 
 ## Install useful rust utilities
 
 ```
-cargo install paru bat fd-find ripgrep
+cargo install paru
 ```
 
 ## Install brave browser
@@ -80,4 +80,11 @@ systemctl start reflector
 ```
 
 Note: the service will not run until you are connected to the internet, so give it a second. If you want to check if the mirrorlist has updated recently, check the timestamps in `/etc/pacman.d/mirrorlist`.
+
+## SSH Server
+
+```
+sudo pacman -S openssh
+sudo systemctl enable sshd
+```
 
