@@ -88,3 +88,8 @@ sudo pacman -S openssh
 sudo systemctl enable sshd
 ```
 
+If you don't want information about your previous login popping up every time you log in, do
+```
+touch ~/.hushlogin
+```
+
