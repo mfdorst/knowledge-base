@@ -10,7 +10,7 @@ sudo apt install nala
 
 ## Install packages
 ```
-sudo nala install bat fish fd-find gnome-tweaks ripgrep kitty zoxide
+sudo nala install clang curl bat fish fd-find git gnome-tweaks ripgrep kitty zoxide
 ```
 
 ## Install fish PPA
@@ -66,6 +66,14 @@ dotconfig
 
 ---
 All dependencies set-up - the following steps can be completed in any order
+
+## Fix naming of `bat` command
+Ubuntu renames `bat` to `batcat` to avoid conflicts with another packages.
+We could rename it, but this would be overwritten whenever `bat` gets updated.
+Instead, we can symlink it to someplace in our `PATH` with the name `bat`.
+```
+ln -s /usr/bin/batcat $HOME/.local/bin/bat
+```
 
 ## Install exa
 ```
