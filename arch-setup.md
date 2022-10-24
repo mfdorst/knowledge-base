@@ -24,7 +24,7 @@ scripts/install-rustup
 ## Install quality-of-life tools for the terminal
 
 ```
-sudo pacman -S alacritty neovim tty-fira-code hub exa bat fd ripgrep
+sudo pacman -S alacritty neovim ttf-fira-code hub exa bat fd ripgrep
 ```
 
 ## Install useful rust utilities
