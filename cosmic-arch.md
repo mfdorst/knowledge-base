@@ -20,8 +20,8 @@ just sysext
 
 ## Copy the system extension
 ```
-mkdir -p /var/lib/extensions
-cp cosmic-sysext /var/lib/extensions
+sudo mkdir -p /var/lib/extensions
+sudo cp cosmic-sysext /var/lib/extensions
 ```
 
 ## Start the sysext service
