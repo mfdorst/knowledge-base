@@ -84,6 +84,22 @@ If you don't want information about your previous login popping up every time yo
 touch ~/.hushlogin
 ```
 
+## Fix monitors switching sides randomly
+Create a script that runs an appropriate `xrandr` command, for instance:
+```
+#!/usr/bin/env bash
+xrandr --output DP-4 --mode 1920x1080 --left-of HDMI-0
+```
+Make it executable
+```
+chmod +x monitor-setup-script
+```
+
+Edit `/etc/lightdm/lightdm.conf`
+```
+display-setup-script = /path/to/monitor-setup-script
+```
+
 ## Printer setup (Canon PIXMA MG6100)
 
 Install the printer and scanner drivers from the AUR:
