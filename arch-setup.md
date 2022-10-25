@@ -1,48 +1,37 @@
 # General setup instructions for Arch
 
+## Setup SSH keys and register them with git
+```
+ssh-keygen -t ed25519
+```
+
+Note: this step requires the `github-cli` package
+```
+gh auth login
+```
+
 ## Pull down dotfiles and scripts from GitHub
 
 ```
-git clone https://github.com/mfdorst/cfg .cfg
-git clone https://github.com/mfdorst/scripts
+git clone git@github.com:mfdorst/.conf
+git clone git@github.com:mfdorst/scripts
 ```
 
 ## Install dotfiles
 
+Note: this requires the `stow` package
 ```
-.cfg/install
-```
-
-## Install Oh-My-Zsh and Starship Prompt and Rustup
-
-```
-scripts/install-omz
-scripts/install-starship
-scripts/install-rustup
+.conf/install.sh
 ```
 
-## Install quality-of-life tools for the terminal
+## Install other stuff
 
 ```
-sudo pacman -S alacritty neovim ttf-fira-code hub exa bat fd ripgrep
-```
-
-## Install useful rust utilities
-
-```
-cargo install paru
-```
-
-## Install brave browser
-
-```
-paru -S brave-bin
-```
-
-## For rust development
-
-```
-cargo install cargo-edit
+install-lvim
+install-omp # Oh my posh
+install-omz # Oh my zsh
+install-paru
+install-starship
 ```
 
 ## Make updates faster with Reflector

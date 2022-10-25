@@ -5,6 +5,6 @@ archinstall
 
 ## Select extra programs to install
 ```
-bat exa fd fish git kitty neovim reflector ripgrep ttf-fira-code zoxide
+bat exa fd fish git github-cli kitty neovim reflector ripgrep rustup stow ttf-fira-code zoxide zsh
 ```
 
