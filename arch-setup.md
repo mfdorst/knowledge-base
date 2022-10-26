@@ -1,5 +1,11 @@
 # General setup instructions for Arch
 
+## Change shell to fish
+```
+exec fish
+chsh -s $(which fish)
+```
+
 ## Setup SSH keys and register them with git
 ```
 ssh-keygen -t ed25519
@@ -13,7 +19,7 @@ gh auth login
 ## Pull down dotfiles and scripts from GitHub
 
 ```
-git clone git@github.com:mfdorst/.conf
+git clone git@github.com:mfdorst/.cfg
 git clone git@github.com:mfdorst/scripts
 ```
 
@@ -21,7 +27,7 @@ git clone git@github.com:mfdorst/scripts
 
 Note: this requires the `stow` package
 ```
-.conf/install.sh
+.cfg/install
 ```
 
 ## Install other stuff
