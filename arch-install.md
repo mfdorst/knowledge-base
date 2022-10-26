@@ -12,3 +12,8 @@ You may also want:
 ```
 feh polybar rofi
 ```
+
+To avoid sound issues on some machines you may want:
+```
+pulseaudio
+```
