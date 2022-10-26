@@ -39,6 +39,8 @@ install-omp # Oh my posh
 install-omz # Oh my zsh
 install-paru
 install-starship
+
+paru -S nerd-fonts-fira-code
 ```
 
 ## Make updates faster with Reflector
