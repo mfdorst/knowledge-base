@@ -21,6 +21,7 @@ gh auth login
 ```
 git clone git@github.com:mfdorst/.cfg
 git clone git@github.com:mfdorst/scripts
+git clone git@github.com:mfdorst/wallpaper
 ```
 
 ## Install dotfiles
