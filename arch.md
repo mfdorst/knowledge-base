@@ -32,6 +32,12 @@ Note: this requires the `stow` package
 .cfg/install
 ```
 
+If you have a hidpi display, you may also want to
+```
+cd ~/.cfg
+stow hidpi
+```
+
 ## Install other stuff
 
 ```
