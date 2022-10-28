@@ -1,4 +1,5 @@
 # General setup instructions for Arch
+For installation instructions, see [arch-install](./arch-install.md).
 
 ## Change shell to fish
 ```
