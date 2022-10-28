@@ -36,4 +36,5 @@ See [arch-setup](./arch-setup.md) for details.
 
 ```
 sudo usermod -aG video $USER
+reboot
 ```
