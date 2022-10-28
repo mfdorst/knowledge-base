@@ -12,7 +12,7 @@ ssh-keygen -t ed25519
 Install github-cli (e.g. `sudo pacman -S github-cli`)
 
 ```
-gh auth login
+gh auth login -p ssh
 ```
 ### Manually
 
@@ -21,4 +21,3 @@ Go to [GitHub settings](https://github.com/settings) > `SSH and GPG keys` > `New
 Open `~/.ssh/id_ed25519.pub` and copy the contents into the key field.
 
 Give the key a name (the name of your computer).
-
