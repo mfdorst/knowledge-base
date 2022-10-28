@@ -43,6 +43,11 @@ install-starship
 paru -S nerd-fonts-fira-code
 ```
 
+If using `hyprland`:
+```
+paru -S hyprland-bin hyprpaper waybar-hyprland
+```
+
 ## Make updates faster with Reflector
 
 ```
@@ -107,6 +112,13 @@ chmod +x monitor-setup-script
 Edit `/etc/lightdm/lightdm.conf`
 ```
 display-setup-script = /path/to/monitor-setup-script
+```
+
+## Enable backlight keys
+```
+sudo pacman -S light
+usermod -aG video <user>
+reboot
 ```
 
 ## Printer setup (Canon PIXMA MG6100)
