@@ -64,6 +64,12 @@ You may want to edit `~/.cfg/symlinks.yml`, or leave it as is.
 dotconfig
 ```
 
+# Add user
+```
+adduser <username>
+usermod -aG sudo <username>
+```
+
 ---
 All dependencies set-up - the following steps can be completed in any order
 
