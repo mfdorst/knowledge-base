@@ -10,7 +10,7 @@ sudo apt install nala
 
 ## Install packages
 ```
-sudo nala install clang curl bat fish fd-find git gnome-tweaks ripgrep kitty zoxide
+sudo nala install clang curl bat btop fish fd-find git gnome-tweaks man ripgrep kitty stow tldr unzip zoxide
 ```
 
 ## Install fish PPA
@@ -21,6 +21,12 @@ sudo add-apt-repository ppa:fish-shell/release-3
 sudo nala update
 sudo nala upgrade
 ```
+
+## Set hostname
+```
+sudo hostname <hostname>
+```
+You may also want to edit `/etc/hostname`
 
 ## Install Vivaldi
 
@@ -36,52 +42,47 @@ Click `New SSH Key` and paste in the public key.
 
 ## Install scripts
 ```
+git clone git@github.com:mfdorst/.cfg
 git clone git@github.com:mfdorst/scripts
-```
-
-## Install rustup
-```
-~/scripts/install-rustup
-```
-
-## Install rust stable
-```
-rustup update stable
-```
-
-## Install Oh-My-Posh
-```
-~/scripts/install-omp
+git clone git@github.com:mfdorst/wallpaper
 ```
 
 ## Install dotfiles
+
+Note: this requires the `stow` package
 ```
-git clone git@github.com:mfdorst/cfg .cfg
-cargo install dotconfig
+.cfg/install
 ```
-You may want to edit `~/.cfg/symlinks.yml`, or leave it as is.
+or look through `.cfg` and stow the items that you need. For instance, on a server one might want:
 ```
-dotconfig
+cd .cfg
+stow bash fish git lvim tnux vim zsh
 ```
 
-# Add user
+## Install other stuff
+```
+install-lvim
+install-rustup
+install-starship
+```
+
+## Add user
 ```
 adduser <username>
 usermod -aG sudo <username>
 ```
-
----
-All dependencies set-up - the following steps can be completed in any order
 
 ## Fix naming of `bat` command
 Ubuntu renames `bat` to `batcat` to avoid conflicts with another packages.
 We could rename it, but this would be overwritten whenever `bat` gets updated.
 Instead, we can symlink it to someplace in our `PATH` with the name `bat`.
 ```
+mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat $HOME/.local/bin/bat
 ```
 
 ## Install exa
+Ubuntu's `exa` package does not include support for the `--git` flag, so we compile it ourselves.
 ```
 cargo install exa
 ```
@@ -100,16 +101,6 @@ Tools I no longer use.
 ## Install Oh-My-Zsh
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-## Install starship prompt
-```
-curl -fsSL https://starship.rs/install.sh | bash
-```
-
-Add the following line to the end of `~/.zshrc`
-```
-eval "$(starship init zsh)"
 ```
 
 ## Install Doom Emacs
