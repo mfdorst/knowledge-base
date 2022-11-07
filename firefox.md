@@ -9,3 +9,9 @@
 7. At the bottom of the panel, click `Density`
 8. Choose `Compact (not supported)`
 9. Click `Done`
+
+# Enable WebGL
+1. Navigate to `about:config` and click `Accept the Risk and Continue`
+2. Find the `webgl.force-enabled` preference
+3. Toggle the setting to `true` and close the tab
+4. Navigate to `webglreport.com` to check that WebGL is working
