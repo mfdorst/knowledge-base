@@ -15,3 +15,8 @@
 2. Find the `webgl.force-enabled` preference
 3. Toggle the setting to `true` and close the tab
 4. Navigate to `webglreport.com` to check that WebGL is working
+
+# Disable ALT menu
+1. Navigate to `about:config` and click `Accept the Risk and Continue`
+2. Find the `ui.key.menuAccessKeyFocuses` preference
+3. Toggle the setting to `false` and close the tab
