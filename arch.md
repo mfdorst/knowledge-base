@@ -6,7 +6,7 @@ archinstall
 ## Select extra programs to install
 Basic setup:
 ```
-bat btop exa fd firefox fish git github-cli inotify-tools kitty light man neovim reflector ripgrep rustup stow tldr ttf-fantasque-sans-mono ttf-fira-code ttf-joypixels unzip zoxide zsh
+bat btop exa fd firefox fish git github-cli inotify-tools kitty light man-db man-pages neovim reflector ripgrep rustup stow tldr ttf-fantasque-sans-mono ttf-fira-code ttf-joypixels unzip zoxide zsh
 ```
 
 If using an X based window manager, may also want:
