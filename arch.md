@@ -157,7 +157,9 @@ Make it executable
 chmod +x monitor-setup-script
 ```
 
-Edit `/etc/lightdm/lightdm.conf`
+Assuming you are using LightDM:
+
+Edit `/etc/lightdm/lightdm.conf`. In the `[Seat:*]` section, add:
 ```
 display-setup-script = /path/to/monitor-setup-script
 ```
