@@ -29,7 +29,6 @@ If using `hyprland`, you will also want these from the `AUR`:
 ```
 hyprland-bin hyprpaper waybar-hyprland
 ```
-See [arch-setup](./arch-setup.md) for details.
 
 ## User groups
 + `video` to enable backlight control with the `light` utility
@@ -38,9 +37,6 @@ See [arch-setup](./arch-setup.md) for details.
 sudo usermod -aG video $USER
 reboot
 ```
-
-# General setup instructions for Arch
-For installation instructions, see [arch-install](./arch-install.md).
 
 ## Change shell to fish
 ```

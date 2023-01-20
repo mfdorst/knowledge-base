@@ -10,7 +10,7 @@ sudo apt install nala
 
 ## Install packages
 ```
-sudo nala install clang curl bat btop fish fd-find git gnome-tweaks man ripgrep kitty stow tldr unzip zoxide
+sudo nala install clang curl bat btop fish fd-find gh git gnome-tweaks man ripgrep kitty stow tldr unzip zoxide
 ```
 
 ## Install fish PPA
@@ -22,23 +22,20 @@ sudo nala update
 sudo nala upgrade
 ```
 
+## Change shell to fish
+```
+exec fish
+chsh -s $(which fish)
+```
+
 ## Set hostname
 ```
 sudo hostname <hostname>
 ```
 You may also want to edit `/etc/hostname`
 
-## Install Vivaldi
-
-## Set up SSH keys with GitHub
-```
-ssh-keygen -t ed25519
-```
-Copy the contents of `~/.ssh/id_ed25519.pub`
-
-Navigate to `github.com/settings/keys`
-
-Click `New SSH Key` and paste in the public key.
+## Setup GitHub
+See [git.md](./git.md)
 
 ## Install scripts
 ```
@@ -95,7 +92,6 @@ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emula
 `Ctl+Alt+T` should now open kitty.
 
 # Past configurations
-
 Tools I no longer use.
 
 ## Install Oh-My-Zsh

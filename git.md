@@ -1,19 +1,20 @@
 # Setup Git and GitHub
 
 ## Generate SSH keys
-
 ```
 ssh-keygen -t ed25519
 ```
 
 ## Add SSH public key to GitHub
 
-### Using github-cli
-Install github-cli (e.g. `sudo pacman -S github-cli`)
+### Using gh (github-cli)
+Arch: `sudo pacman -S github-cli`
+Ubuntu: `sudo nala install gh`
 
 ```
 gh auth login -p ssh
 ```
+
 ### Manually
 
 Go to [GitHub settings](https://github.com/settings) > `SSH and GPG keys` > `New SSH key`.
