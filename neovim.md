@@ -1,5 +1,12 @@
 # Installing Neovim
 
+## Using my script
+The script essentially just follows the steps outlined here.
+
+```
+install-nvim-ubuntu
+```
+
 ## Build from source
 
 _See [building neovim] for complete instructions._
@@ -33,10 +40,8 @@ For the latest stable version:
 git checkout stable
 ```
 Or checkout a version that is known to work with your config.
-
-The latest stable release as of this writing (9/22) is v0.7.2, and that is working well.
 ```
-git checkout v0.7.2
+git checkout v0.8.2
 ```
 
 ### Build and install
@@ -44,6 +49,17 @@ From the `neovim` directory, run
 ```
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
+```
+
+### Install packer
+```
+install-packer
+```
+
+### Initialize packer
+Neovim will be essentially unusable until you do this if you have any plugins in your config.
+```
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 ```
 
 [building neovim]: https://github.com/neovim/neovim/wiki/Building-Neovim
