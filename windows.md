@@ -1,5 +1,13 @@
 # Windows
 
+## WSL
+
+### Install
+Open `PowerShell` and type `wsl --install`
+
+### Access WSL files from Explorer
+Navigate to `\\wsl$`
+
 ## Transparent taskbar
 Download `TranslucentTB` from the Microsoft Store.
 
