@@ -57,9 +57,8 @@ install-packer
 ```
 
 ### Initialize packer
-Neovim will be essentially unusable until you do this if you have any plugins in your config.
 ```
-nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+packer-sync
 ```
 
 [building neovim]: https://github.com/neovim/neovim/wiki/Building-Neovim
