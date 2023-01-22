@@ -2,7 +2,6 @@
 
 ## Using my script
 The script essentially just follows the steps outlined here.
-
 ```
 install-nvim-ubuntu
 ```
