@@ -21,3 +21,18 @@ Placed at the end, e.g. `:%s/foo/bar/gci`
 `c`: Ask to confirm each match.
 `i`: Case insensitive.
 `I`: Case sensitive.
+
+## Move files in netrw
+
+### Mark target
+Hover over the directory you want to move the file to, and press `mt`. This will mark it as the
+target destination.
+
+### Mark the file
+Hover over the file you want to move, and press `mf`. This will mark the file.
+
+### Copy the file
+Press `mc` to copy the file to the marked target directory.
+
+### Delete the original
+Press `D` to delete the original file.

@@ -65,3 +65,8 @@ packer-sync
 ```
 
 [building neovim]: https://github.com/neovim/neovim/wiki/Building-Neovim
+
+# Troubleshooting Neovim
+
+## Errors coming from tree-sitter
+Try `:TSUpdate`, it may fix the problem.
