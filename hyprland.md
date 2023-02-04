@@ -22,6 +22,9 @@ Or, for an Nvidia system,
 Exec=/home/michael/scripts/hyprland-launch-nvidia
 ```
 
+**NOTE:** Your package manager will likely overwrite the `hyprland.desktop` file every time you
+upgrade Hyprland, so you will need to do this again each time.
+
 See my [scripts][2] repo on GitHub.
 
 [1]: https://wiki.archlinux.org/title/SDDM
