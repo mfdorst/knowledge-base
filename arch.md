@@ -6,7 +6,35 @@ archinstall
 ## Select extra programs to install
 Basic setup:
 ```
-bat btop exa fd firefox fish git github-cli inotify-tools kitty light man-db man-pages neovim reflector ripgrep rustup stow tldr ttf-fantasque-sans-mono ttf-fira-code ttf-joypixels unzip zoxide zsh
+bat
+btop
+exa
+fd
+firefox
+fish
+git
+github-cli
+inotify-tools
+kitty
+light
+man-db
+man-pages
+neovim
+pipewir
+pipewire-als
+pipewire-audi
+pipewire-puls
+reflector
+ripgrep
+rustup
+stow
+tldr
+ttf-fantasque-sans-mono
+ttf-fira-code
+ttf-joypixels
+unzip
+zoxide
+zsh
 ```
 
 If using an X based window manager, may also want:
@@ -14,21 +42,25 @@ If using an X based window manager, may also want:
 feh polybar rofi xorg-xinput
 ```
 
-If using a wayland compositor, you may also want:
+If using a Wayland compositor, you may also want:
 ```
-waybar wofi
+wallpaper-sway waybar wofi
 ```
 
-To avoid sound issues on some machines you may want:
-```
-pulseaudio
-```
 ### Post install for `hyprland`
 
 If using `hyprland`, you will also want these from the `AUR`:
 ```
-hyprland-bin hyprpaper waybar-hyprland
+hyprland-bin waybar-hyprland
 ```
+
+### Audio
+See the ArchWiki page for [PipeWire].
+
+You may want a GUI tool for managing audio sources and syncs.
+`qpwgraph` and `helvum` are two options for this.
+
+[PipeWire]: https://wiki.archlinux.org/title/PipeWire#Installation
 
 ## User groups
 + `video` to enable backlight control with the `light` utility
