@@ -40,6 +40,7 @@ light
 man-db
 man-pages
 neovim
+openssh
 pipewire
 pipewire-alsa
 pipewire-audio
@@ -48,9 +49,10 @@ reflector
 ripgrep
 rustup
 stow
+sudo
 tldr
 ttf-fantasque-sans-mono
-ttf-fira-code
+ttf-firacode-nerd
 ttf-joypixels
 unzip
 zoxide
