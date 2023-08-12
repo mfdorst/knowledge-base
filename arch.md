@@ -60,11 +60,6 @@ zoxide
 zsh
 ```
 
-If using an X based window manager, may also want:
-```
-feh polybar rofi xorg-xinput
-```
-
 If using a Wayland compositor, you may also want:
 ```
 swaybg waybar wl-copy wofi
@@ -72,14 +67,18 @@ swaybg waybar wl-copy wofi
 
 If using hyprland, you may want `sddm`.
 
-### Post install for `hyprland`
-
-If using `hyprland`, you will also want these from the `AUR`:
+If using an X based window manager, may also want:
 ```
-waybar-hyprland
+feh polybar rofi xorg-xinput
 ```
 
-### Audio
+## Hyprland
+Hyprland works best with [SDDM].
+
+[SDDM]: sddm.md
+
+
+## Audio
 See the ArchWiki page for [PipeWire].
 
 You may want a GUI tool for managing audio sources and syncs.
