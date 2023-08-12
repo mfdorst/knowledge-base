@@ -173,14 +173,9 @@ To make the updates faster, use only the 5 latest US mirrors.
 
 ### Enable `reflector.service` to run on startup
 
+The `--now` flag will make it run immediately.
 ```
-systemctl enable reflector
-```
-
-To run immediately:
-
-```
-systemctl start reflector
+systemctl enable --now reflector
 ```
 
 Note: the service will not run until you are connected to the internet, so give it a second. If you
