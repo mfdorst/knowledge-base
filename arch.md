@@ -1,4 +1,23 @@
 # Installation
+
+## Set up WiFi on bootable USB
+
+Find out what your wifi device is called with
+```
+iwctl device list
+```
+often it will be called `wlan0`.
+
+Connect to a WiFi network with
+```
+iwctl station <device> connect <SSID>
+```
+If you do not know your network's SSID, use
+```
+iwctl station <device> scan
+```
+
+## Run the archinstall script
 ```
 archinstall
 ```
@@ -47,6 +66,8 @@ If using a Wayland compositor, you may also want:
 ```
 swaybg waybar wofi
 ```
+
+If using hyprland, you may want `sddm`.
 
 ### Post install for `hyprland`
 
