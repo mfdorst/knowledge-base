@@ -36,6 +36,7 @@ github-cli
 hyprland
 inotify-tools
 kitty
+lazygit
 light
 man-db
 man-pages
@@ -66,7 +67,7 @@ feh polybar rofi xorg-xinput
 
 If using a Wayland compositor, you may also want:
 ```
-swaybg waybar wofi
+swaybg waybar wl-copy wofi
 ```
 
 If using hyprland, you may want `sddm`.
