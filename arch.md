@@ -14,16 +14,17 @@ firefox
 fish
 git
 github-cli
+hyprland
 inotify-tools
 kitty
 light
 man-db
 man-pages
 neovim
-pipewir
-pipewire-als
-pipewire-audi
-pipewire-puls
+pipewire
+pipewire-alsa
+pipewire-audio
+pipewire-pulse
 reflector
 ripgrep
 rustup
@@ -44,14 +45,14 @@ feh polybar rofi xorg-xinput
 
 If using a Wayland compositor, you may also want:
 ```
-wallpaper-sway waybar wofi
+swaybg waybar wofi
 ```
 
 ### Post install for `hyprland`
 
 If using `hyprland`, you will also want these from the `AUR`:
 ```
-hyprland-bin waybar-hyprland
+waybar-hyprland
 ```
 
 ### Audio
