@@ -119,37 +119,19 @@ git clone git@github.com:mfdorst/wallpaper
 ```
 
 ## Install dotfiles
+Browse the `.cfg` directory, and for each configuration you want to use, run `stow <dir>`.
 
-Note: this requires the `stow` package
-```
-.cfg/install
-```
-
-If you have a hidpi display, you may also want to
-```
-cd ~/.cfg
-stow hidpi
-```
+If you have a hidpi display, make sure to `stow hidpi`.
 
 ## Install other stuff
 
 ```
-install-lvim
-install-omp # Oh my posh
 install-omz # Oh my zsh
 install-paru
 install-starship
-
-paru -S nerd-fonts-fira-code
-```
-
-If using `hyprland`:
-```
-paru -S hyprland-bin hyprpaper waybar-hyprland
 ```
 
 ## Make updates faster with Reflector
-
 ```
 sudo pacman -S reflector
 ```
@@ -170,9 +152,9 @@ To make the updates faster, use only the 5 latest US mirrors.
 --sort rate
 ```
 
-### Enable `reflector.service` to run on startup
+### Run reflector on startup
 
-The `--now` flag will make it run immediately.
+The `--now` flag will make it run immediately, as well as on startup.
 ```
 systemctl enable --now reflector
 ```
@@ -193,7 +175,15 @@ If you don't want information about your previous login popping up every time yo
 touch ~/.hushlogin
 ```
 
-## Fix monitors switching sides randomly
+## Enable backlight keys
+```
+sudo pacman -S light
+usermod -aG video <user>
+reboot
+```
+For usage examples, check the hyprland config.
+
+## Fix monitors switching sides randomly on X
 Create a script that runs an appropriate `xrandr` command, for instance:
 ```
 #!/usr/bin/env bash
@@ -209,13 +199,6 @@ Assuming you are using LightDM:
 Edit `/etc/lightdm/lightdm.conf`. In the `[Seat:*]` section, add:
 ```
 display-setup-script = /path/to/monitor-setup-script
-```
-
-## Enable backlight keys
-```
-sudo pacman -S light
-usermod -aG video <user>
-reboot
 ```
 
 ## Printer setup (Canon PIXMA MG6100)
@@ -239,4 +222,3 @@ Use the `cnijnet:/` address in the following command:
 ```
 sudo lpadmin -p "Canon MG6120 -m canonmg6100.ppd -v cnijnet:/<address> -E
 ```
-
