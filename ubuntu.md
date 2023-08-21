@@ -53,14 +53,14 @@ Note: this requires the `stow` package
 or look through `.cfg` and stow the items that you need. For instance, on a server one might want:
 ```
 cd .cfg
-stow bash fish git lvim tnux vim zsh
+stow bash git nvim tmux vim zsh
 ```
 
-## Install other stuff
+## Run install scripts
 ```
-install-lvim
-install-rustup
+install-omz
 install-starship
+install-rustup
 ```
 
 ## Add user
@@ -70,6 +70,8 @@ usermod -aG sudo <username>
 ```
 
 ## Fix naming of `bat` command
+### Note: as of Ubuntu 23.04 this is no longer needed.
+
 Ubuntu renames `bat` to `batcat` to avoid conflicts with another packages.
 We could rename it, but this would be overwritten whenever `bat` gets updated.
 Instead, we can symlink it to someplace in our `PATH` with the name `bat`.
@@ -79,6 +81,7 @@ ln -s /usr/bin/batcat $HOME/.local/bin/bat
 ```
 
 ## Install exa
+### Note: As of Ubuntu 23.04 this is no longer needed.
 Ubuntu's `exa` package does not include support for the `--git` flag, so we compile it ourselves.
 ```
 cargo install exa
@@ -93,11 +96,6 @@ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emula
 
 # Past configurations
 Tools I no longer use.
-
-## Install Oh-My-Zsh
-```
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
 
 ## Install Doom Emacs
 ```
@@ -152,19 +150,6 @@ pyenv install 3.9.2   # or other desired version
 ```
 pyenv global 3.9.2
 ```
-
-# Install nvm
-```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-```
-
-# Install npm (requires nvm)
-```
-nvm install --lts   # installs the latest LTS version
-nvm use --lts
-```
-
-Note: there is an `apt` package for node, but there are permissions issues when installing global packages. NVM fixes these.
 
 # Install marked (for markdown preview in emacs)
 ```
