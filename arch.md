@@ -40,3 +40,9 @@ sudo pacman -Syyuu
 Double `y` refreshes your package database, double `u` allows pacman to downgrade packages.
 
 Make sure to `reboot` if you are downgrading the kernel or graphics drivers.
+
+## Check archlinux news before updating packages
+Install `informant` from the AUR. It will create a pacman hook that stops you from upgrading until
+you have read the latest news.
+
+Run `sudo informant read` to read your unread archlinux news.
