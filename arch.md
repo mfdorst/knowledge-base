@@ -41,6 +41,14 @@ Double `y` refreshes your package database, double `u` allows pacman to downgrad
 
 Make sure to `reboot` if you are downgrading the kernel or graphics drivers.
 
+## Pin a package version
+Say you have identified that the newest nvidia drivers are breaking your system. You have rolled
+them back to working versions, but you would like to update the rest of your system. You can pin
+their versions with `IgnorePkg` in `/etc/pacman.conf`.
+```
+IgnorePkg = nvidia nvidia-utils
+```
+
 ## Check archlinux news before updating packages
 Install `informant` from the AUR. It will create a pacman hook that stops you from upgrading until
 you have read the latest news.
