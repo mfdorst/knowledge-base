@@ -1,5 +1,12 @@
 # Go
 
+## Create a go module
+```
+mkdir go-project
+cd go-project
+go mod init github.com/mfdorst/go-project
+```
+
 ## Move default go directory
 By default, go installs binaries in `~/go/bin`. This is quite an annoying place for it, so you may
 want to move it.
@@ -19,5 +26,3 @@ mv ~/go ~/.go
 go install github.com/mitranim/gow@latest
 gow run .
 ```
-
-
