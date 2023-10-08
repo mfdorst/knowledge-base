@@ -1,5 +1,10 @@
 # Vim
 
+## Set filetype of current buffer (enables syntax highlighting for specified language)
+```
+:setf <language>
+```
+
 ## Search and replace
 
 Find each occurence of `foo` (in all lines) and replace it with `bar`.

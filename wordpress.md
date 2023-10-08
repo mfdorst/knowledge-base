@@ -139,4 +139,37 @@ Create a test page to verify NGINX can render PHP and connect to the MariaDB dat
 </html>
 ```
 
+## Install WordPress
+
+Download wordpress using the `download-wordpress` script
+```
+sudo mkdir /var/www/html/example.com/src
+cd $_
+sudo ~/scripts/download-wordpress
+```
+
+The script will download wordpress, extract it to a folder named `wordpress`, and change the name
+of the archive to include the day it was downloaded, and set ownership of everything to `www-data`,
+the user that both NGINX and Apache run as.
+
+From there, you will need to move the loose wordpress files into the `public_html` directory.
+```
+sudo mv wordpress/* ../public_html
+sudo rm -r wordpress
+```
+
+### Run the installer script
+Navigate to the site URL and go through the installer.
+
+## Set up HTTPS only
+Edit `var/www/html/example.com/public_html/wo-config.php`.
+Before the line that reads `/* That's all, stop editing! Happy publishing. */`, add the following.
+```php
+define('FORCE_SSL_ADMIN', true);
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
+    $_SERVER['HTTPS']='on';
+define('WP_HOME','https://example.com');
+define('WP_SITEURL','https://example.com');
+```
+
 [1]: https://www.linode.com/docs/guides/how-to-install-the-lemp-stack-on-ubuntu-18-04/
