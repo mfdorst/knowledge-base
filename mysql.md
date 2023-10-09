@@ -14,9 +14,10 @@ mysql -u root -p
 
 This also applies to `mysqldump`.
 
-## Use a DB
+## Selecting a DB
 ```
-> USE database;
+> SHOW DATABASES;
+> USE db_name;
 ```
 
 ## Create a DB dump
@@ -26,13 +27,19 @@ sudo mysqldump -u root db_name -r db_dump.sql
 You may need to use the `-p` flag depending on your configuration.
 
 ## Load a DB dump
-Create a new DB
+To load the dump into a new database,
 ```
 sudo mysql -u root
 > CREATE DATABASE new_db;
-> exit
+> SOURCE db_dump.sql;
 ```
-Load the DB dump
+Or, to overwrite an existing database,
 ```
-sudo mysql -u root new_db db_dump.sql
+> DROP existing_db;
+> CREATE DATABASE existing_db;
+> SOURCE db_dump.sql;
+```
+You can also do the `SOURCE` step from outside the mysql shell.
+```
+sudo mysql -u root new_db < db_dump.sql
 ```
