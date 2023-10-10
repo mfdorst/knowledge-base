@@ -37,6 +37,19 @@ gpg --import public.gpg
 gpg --import secret.gpg
 ```
 
+## Trust an imported secret key
+```
+gpg --edit-key <GPG key> trust
+> 5
+> y
+> quit
+```
+Verify it is trusted with
+```
+gpg --list-secret-keys
+```
+It should say `[ultimate]` next to your name.
+
 ## Don't ask for my password for a week
 
 Create `~/.gnupg/gpg-agent.conf` if it does not exist, and add
