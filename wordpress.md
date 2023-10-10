@@ -36,6 +36,8 @@ Edit `/etc/php/8.1/fpm/php.ini`, locate `;cgi.fix_pathinfo=1`, uncomment it and 
 cgi.fix_pathinfo=0
 ```
 
+See [PHP](php.md) for other settings you may need to change.
+
 ## Setup NGINX
 For all following steps, replace `example.com` with your domain.
 
