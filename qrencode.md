@@ -2,5 +2,5 @@
 
 Encode a string and display it as a QR code
 ```
-bat ~/.ssh/id_ed25519 -t ansiutf8
+bat ~/.ssh/id_ed25519 | qrencode -t ansiutf8
 ```
