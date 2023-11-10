@@ -35,7 +35,7 @@ sudo mysql -u root
 ```
 Or, to overwrite an existing database,
 ```
-> DROP existing_db;
+> DROP DATABASE existing_db;
 > CREATE DATABASE existing_db;
 > SOURCE db_dump.sql;
 ```
