@@ -60,12 +60,17 @@ To enable reading informant news without `sudo`, run
 sudo chown me /var/lib/informant.dat
 ```
 
-## View information about a package
+## Install packages as a dependencies
+```
+pacman -S --asdeps <package1> <package2> ...
+```
+
+## View information about a package, including optional dependencies
 ```
 pacman -Si <package>
 ```
 
-## Install packages as a dependencies
+## List files associated with a package
 ```
-pacman -S --asdeps <package1> <package2> ...
+pacman -Ql <package>
 ```
