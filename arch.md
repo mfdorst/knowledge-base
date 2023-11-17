@@ -54,3 +54,8 @@ Install `informant` from the AUR. It will create a pacman hook that stops you fr
 you have read the latest news.
 
 Run `sudo informant read` to read your unread archlinux news.
+
+To enable reading informant news without `sudo`, run
+```
+sudo chown me /var/lib/informant.dat
+```
