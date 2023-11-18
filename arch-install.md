@@ -27,12 +27,13 @@ Basic setup:
 ```
 bat
 btop
-exa
+eza
 fd
 firefox
 fish
 git
 github-cli
+gnupg
 hyprland
 inotify-tools
 kitty
@@ -42,6 +43,7 @@ man-db
 man-pages
 neovim
 openssh
+pass
 pipewire
 pipewire-alsa
 pipewire-audio
@@ -58,6 +60,12 @@ ttf-joypixels
 unzip
 zoxide
 zsh
+```
+
+### Extra dependencies
+For `pinentry-gnome3`
+```
+sudo pacman -S --asdeps gcr
 ```
 
 If using a Wayland compositor, you may also want:
