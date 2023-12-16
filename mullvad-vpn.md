@@ -10,6 +10,12 @@ mullvad account login
 ```
 Paste account number
 
+### Enable ipv6 in the tunnel
+If you don't do this, you may lose connectivity
+```
+mullvad tunnel set ipv6 on
+```
+
 ### Connect/disconnect
 ```
 mullvad connect
@@ -35,10 +41,10 @@ mullvad relay list
 
 #### Set relay by country
 ```
-mullvad relay set us
+mullvad relay set location us
 ```
 
 #### Set relay by city
 ```
-mullvad relay set us lax
+mullvad relay set location us lax
 ```
