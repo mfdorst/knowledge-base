@@ -25,14 +25,7 @@ On a device that is already authenticated, download and import the new public ke
 cd ~/.password-store
 git pull
 gpg --import .public-keys/*
-```
-Tell gpg to trust the new key ultimately
-```
-gpg --edit-key new-host@mdorst.net
-gpg> trust
-Your decision? 5
-Do you really want to set this key to ultimate trust? (y/N) y
-gpg> save
+echo "5\ny\n" | gpg --command-fd 0 --edit-key new-host@mdorst.net trust
 ```
 
 Reencrypt all passwords with the new key, as well as all the existing keys
