@@ -26,6 +26,9 @@ nvme0n1p4: Ext4 (/ for NixOS)
 ```
 You may need to adapt these instructions if your disk layout is different.
 
+Note: If you are re-using an existing config, make sure to run `nixos-generate-config --root /mnt`,
+and copy the the new drive UUID's into your existing `hardware-configuration.nix`.
+
 ```
 sudo mount /dev/nvme0n1p4 /mnt
 sudo mkdir /mnt/boot
