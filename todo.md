@@ -3,6 +3,15 @@
 + Neovim:
   + Formatting
   + Fix "s" key behavior in normal mode
+  + Add lazygit integration
 
 + Hyprland:
   + Make notifications float
+
++ Minecraft:
+  + Submit bug report to mkaito/nixos-modded-minecraft-servers
+  + Write a nix module for forge
+
++ Zsh:
+  + Get rid of Oh My Zsh
+    + Figure out how to get up-arrow functionality in vanilla zsh
