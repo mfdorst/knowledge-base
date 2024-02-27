@@ -1,5 +1,22 @@
 # Git
 
+## Shallow clone
+
+Blobless clone (recommended): clones all commits and trees, but fetches blobs on-demand.
+```
+git clone --filter=blob:none <repo>
+```
+Treeless clone: clones all commits, but fetches trees and blobs on-demand. Best if you only need
+the latest version, but you still need history information.
+```
+git clone --filter=tree:0 <repo>
+```
+Shallow clone: clones only the latest commit. Smallest download size. Best if only the latest
+version is needed, and history information is not needed.
+```
+git clone --depth=1 <repo>
+```
+
 ## Setup SSH keys for GitHub
 
 ### Generate SSH keys
