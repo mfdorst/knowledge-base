@@ -7,6 +7,7 @@
 
 + Hyprland:
   + Make notifications float
+  + Make bitwarden popup float
 
 + Minecraft:
   + Submit bug report to mkaito/nixos-modded-minecraft-servers
