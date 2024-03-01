@@ -16,3 +16,5 @@
 + Zsh:
   + Get rid of Oh My Zsh
     + Figure out how to get up-arrow functionality in vanilla zsh
+
++ Research direnv
