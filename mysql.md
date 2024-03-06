@@ -14,6 +14,24 @@ mysql -u root -p
 
 This also applies to `mysqldump`.
 
+## Enable autocomplete
+```sql
+rehash
+```
+or
+```
+\#
+```
+or, in `.my.conf`
+```
+[mysql]
+auto-rehash
+```
+Can be disabled by passing the `--disable-auto-rehash` flag. This could be necessary if pasting
+queries that contain tab characters.
+
+Alternatively, use `mycli`, which is reported to have better autocomplete than the `mysql` command.
+
 ## Select a DB
 ```sql
 SHOW DATABASES;
