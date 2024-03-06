@@ -18,3 +18,4 @@
     + Figure out how to get up-arrow functionality in vanilla zsh
 
 + Research direnv
++ Check out `mycli` for mysql with better autocomplete
