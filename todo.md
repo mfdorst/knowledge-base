@@ -1,13 +1,17 @@
 # Stuff I plan on getting around to doing
 
++ Get nextcloud working
+
 + Neovim:
   + Formatting
   + Fix "s" key behavior in normal mode
   + Add lazygit integration
+  + Get a keybind for adding a newline without entering insert mode
 
 + Hyprland:
   + Make notifications float
   + Make bitwarden popup float (https://github.com/hyprwm/Hyprland/issues/3835)
+  + Make steam update window float centered
 
 + Minecraft:
   + Submit bug report to mkaito/nixos-modded-minecraft-servers
