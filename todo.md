@@ -1,6 +1,7 @@
 # Stuff I plan on getting around to doing
 
 + Get nextcloud working
++ Clean out downloads folder
 
 + Neovim:
   + Formatting
