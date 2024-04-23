@@ -10,6 +10,7 @@
   + Get a keybind for adding a newline without entering insert mode
   + Add oil
   + Add code context plugin
+  + Set up tmux window switching integration
 
 + Hyprland:
   + Make notifications float
