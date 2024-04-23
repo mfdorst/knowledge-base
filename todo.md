@@ -9,6 +9,8 @@
   + Add lazygit integration
   + Get a keybind for adding a newline without entering insert mode
   + Add <leader>d/dd keybinds
+  + Add oil
+  + Add code context plugin
 
 + Hyprland:
   + Make notifications float
